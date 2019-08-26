@@ -1,7 +1,7 @@
-var gio = require("utils/es/index.js").default;
-
-gio('setUserId', 12);
-
+var gio = require("utils/gio-minp.js").default;
+// version 是你的小程序的版本号，发版时请调整
+gio('init', '你的 GrowingIO 项目ID', '你的微信小程序的 AppID', { version: '1.0' });
+//app.js
 var util = require("./utils/util");
 
 App({

@@ -1,7 +1,4 @@
 var gio = require("utils/es/index.js").default;
-
-gio('setUserId', 12);
-
 var util = require("./utils/util");
 
 App({

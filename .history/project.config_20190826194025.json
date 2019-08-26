@@ -9,10 +9,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.7.0",
-	"appid": "wxd4626ea0768f555b",
+	"appid": "wx9694efa1c5c93898",
 	"projectname": "dailytask",
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

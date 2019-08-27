@@ -1,0 +1,19 @@
+<!--pages/gtouch/gtouch.wxml-->
+<gio-marketing />
+<view class="page">
+    <label class="title">请输入查询内容</label>
+    <input class="inputarea"  bindinput="onInput" value='' name='inputValue'/>
+    <button bindtap='onRequest' type="primary" class="searBtn">查询</button>
+    <view class="page__hd">
+        <view class="page__title">定制自己的任务产生规则</view>
+        <view class="page__desc">关于cron表达式的全部</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-article">
+           <image src=""></image>
+        </view>
+    </view>
+</view>
+
+
+ 

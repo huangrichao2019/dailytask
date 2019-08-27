@@ -1,0 +1,12 @@
+/* pages/gtouch/gtouch.wxss */
+.inputarea{
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  margin-top: 10px;
+  }
+
+.searBtn{
+  margin-top: 40px;
+  width: 92%;
+}

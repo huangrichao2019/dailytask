@@ -1,4 +1,5 @@
-var gio = require("utils/es/index.js").default;
+var gio = require("utils/gio-minp/cjs/index.js").default;
+
 
 gio('setUserId', 12);
 
@@ -36,6 +37,6 @@ App({
         }
     },
     globalData: {
-        userInfo: null
+        userInfo: null,
     }
 })

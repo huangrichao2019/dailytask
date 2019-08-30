@@ -1,11 +1,21 @@
 {
 	"description": "项目配置文件。",
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.7.0",
@@ -22,11 +32,15 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -45,6 +59,13 @@
 					"name": "C",
 					"pathName": "pages/service/index",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/gtouch/gtouch",
+					"pathName": "pages/gtouch/gtouch",
+					"query": "http://k8s-qa-messages.growingio.com/v2/0a1b4118dd954ec3bcc69da5138bdb96/notifications/preview?message_id=1P6j1mPd&url_scheme=growing.638b52710867187c",
+					"scene": null
 				}
 			]
 		}

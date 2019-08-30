@@ -1,3 +1,4 @@
+<gio-marketing />
 <view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
    
     <view class="page__bd">
@@ -76,7 +77,7 @@
             <block >
                 <view bindtap="createtask"  class="weui-grid" hover-class="weui-grid_active">
                     <image class="weui-grid__icon" src="/assets/images/fabu.png" />
-                    <view class="weui-grid__label">发布</view>
+                    <view class="weui-grid__label">创建</view>
                 </view>
             </block>
              <block >

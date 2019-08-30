@@ -1,5 +1,8 @@
-var task = require("../../service/task");
+var { Utils } = require('../../utils/gio-minp/cjs/index.js');
+var task = require("../../service/task")
 var app = getApp()
+var tag = 'GTouch'
+
 // pages/gtouch/gtouch.js
 Page({
 
@@ -31,9 +34,48 @@ Page({
     console.log(inputValue);
   },
 
-  onRequest: function () {
-    var inputValue = this.data.inputValue
-    console.log("我点击了" + inputValue);
+  onRequestPreview: function () {
+    // var inputValue = this.data.inputValue
+    // console.log("我点击了" + inputValue);
+
+    wx.request({
+      url: `https://messages.growingio.com/v2/9c76fe4756c3404d/notifications/preview?message_id={this.data.inputValue}&url_scheme={wx.wx.getAccountInfoSync().miniProgram.appId}`,
+      header: {
+        "content-type": "application/json"
+      },
+      success: (res) => {
+        console.log(res.data)
+      },
+      fail: () => {
+        console.log(tag,'Error')
+      }
+    })
+  },
+
+  showVersion:function() {
+    wx.showToast({
+      title: wx.getAccountInfoSync().miniProgram.appId +' 版本：' +Utils.sdkVer,
+      icon: 'none',
+      duration: 1000
+    })
+  },
+  checkoutQA:function(){
+    wx.clearStorageSync()
+    wx.setStorageSync('marketingHost','http://k8s-qa-messages.growingio.com' )
+    wx.showToast({
+      title: '切换环境成功',
+      icon: 'none',
+      duration: 2000
+    })
+  },
+  checkoutOnline:function(){
+    wx.clearStorageSync()
+    wx.setStorageSync('marketingHost', 'https://messages.growingio.com')
+    wx.showToast({
+      title: '切换环境成功',
+      icon: 'none',
+      duration: 2000
+    })
   },
   /**
    * 生命周期函数--监听页面加载

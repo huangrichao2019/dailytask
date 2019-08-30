@@ -6,7 +6,8 @@
     "pages/panel/index",
     "pages/service/index",
     "pages/service/cloud",
-    "pages/report/index"
+    "pages/report/index",
+    "pages/gtouch/gtouch"
   ],
   "tabBar": {
     "color": "#333333",
@@ -31,6 +32,12 @@
         "text": "我的",
         "iconPath": "assets/images/user.png",
         "selectedIconPath": "assets/images/user1.png"
+      },
+      {
+        "pagePath": "pages/gtouch/gtouch",
+        "text": "设置",
+        "iconPath": "assets/images/fenlei.png",
+        "selectedIconPath": "assets/images/fenlei1.png"
       }
     ]
   },
@@ -42,6 +49,9 @@
     "backgroundTextStyle": "light",
     "navigationBarTextStyle": "white",
     "navigationBarBackgroundColor": "#1296db"
+  },
+  "usingComponents": {
+    "gio-marketing": "utils/gio-minp/cjs/components/gio-marketing/gio-marketing"
   },
   "debug": true,
   "sitemapLocation": "sitemap.json"

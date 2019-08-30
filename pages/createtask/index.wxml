@@ -1,6 +1,6 @@
-<gio-marketing />
+
 <view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
-   
+    <gio-marketing />
     <view class="page__bd">
       <navigator url="/pages/panel/index"  >
        <view class="weui-cell weui-cell_access">

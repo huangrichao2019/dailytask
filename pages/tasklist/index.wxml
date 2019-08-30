@@ -1,5 +1,6 @@
-<gio-marketing />
+
 <view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+<gio-marketing />
 <view class="page__bd">
  <swiper 
   

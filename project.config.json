@@ -1,12 +1,14 @@
 {
 	"description": "项目配置文件。",
 	"setting": {
-		"urlCheck": false,
-		"es6": true,
+		"urlCheck": true,
+		"es6": false,
+		"enhance": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
+		"nodeModules": true,
 		"autoAudits": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
@@ -61,10 +63,10 @@
 					"query": ""
 				},
 				{
-					"id": -1,
+					"id": 3,
 					"name": "pages/gtouch/gtouch",
 					"pathName": "pages/gtouch/gtouch",
-					"query": "http://k8s-qa-messages.growingio.com/v2/0a1b4118dd954ec3bcc69da5138bdb96/notifications/preview?message_id=1P6j1mPd&url_scheme=growing.638b52710867187c",
+					"query": "http://messages.growingio.com/v1/0a1b4118dd954ec3bcc69da5138bdb96/notifications/preview?message_id=1P6j1mPd&url_scheme=growing.638b52710867187c",
 					"scene": null
 				}
 			]

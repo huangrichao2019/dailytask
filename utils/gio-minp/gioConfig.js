@@ -2,11 +2,11 @@
 // import Taro from '@tarojs/taro';
 // import Cml from 'chameleon-runtime';
 export default {
-  projectId: '',
-  appId: '',              //如果不填会自动获取
-  version: '',
-  debug: false,           //是否开启调试模式，可以看到采集的数据。默认 false
-  forceLogin: false,      //是否强制要求用户登陆微信获取 openid。默认 true
+  projectId: '9c76fe4756c3404d',
+  appId: 'wxd4626ea0768f555b',              //如果不填会自动获取
+  version: '1.0.6',
+  debug: true,           //是否开启调试模式，可以看到采集的数据。默认 false
+  forceLogin: true,      //是否强制要求用户登陆微信获取 openid。默认 true
   followShare: true,     //是否详细跟踪分享数据，开启后可使用分享分析功能。默认false
   usePlugin: false,       //是否使用了第三方插件。默认false
   getLocation: {          //是否自动获取用户的地理位置信息, 并设置获取方式

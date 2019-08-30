@@ -1,6 +1,4 @@
-var { Utils } = require('../../utils/gio-minp/index.js');
-var task = require("../../service/task")
-var app = getApp()
+var { Utils } = require('../../utils/gio-minp/index.js')
 var tag = 'GTouch'
 
 // pages/gtouch/gtouch.js
@@ -35,9 +33,9 @@ Page({
   onRequestPreview: function () {
     // var inputValue = this.data.inputValue
     // console.log("我点击了" + inputValue);
-
+    var preview_url = 'https://messages.growingio.com/v2/9c76fe4756c3404d/notifications/preview?message_id=' + this.data.inputValue  +'&url_scheme=wxd4626ea0768f555b'
     wx.request({
-      url: `https://messages.growingio.com/v2/9c76fe4756c3404d/notifications/preview?message_id={this.data.inputValue}&url_scheme={wx.wx.getAccountInfoSync().miniProgram.appId}`,
+      url: preview_url,
       header: {
         "content-type": "application/json"
       },

@@ -1,4 +1,4 @@
-var { Utils } = require('../../utils/gio-minp/cjs/index.js');
+var { Utils } = require('../../utils/gio-minp/index.js');
 var task = require("../../service/task")
 var app = getApp()
 var tag = 'GTouch'
@@ -11,8 +11,6 @@ Page({
    */
   data: {
     inputValue: '',
-    tasks:[],
-    panels: app.defaultpanel,
     indicatorDots: false,
     autoplay: false,
     interval: 5000,

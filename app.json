@@ -51,7 +51,7 @@
     "navigationBarBackgroundColor": "#1296db"
   },
   "usingComponents": {
-    "gio-marketing": "utils/gio-minp/cjs/components/gio-marketing/gio-marketing"
+    "gio-marketing": "utils/gio-minp/components/gio-marketing/gio-marketing"
   },
   "debug": true,
   "sitemapLocation": "sitemap.json"

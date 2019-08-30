@@ -1,4 +1,4 @@
-var gio = require("utils/gio-minp/cjs/index.js").default;
+var gio = require("utils/gio-minp/index.js").default;
 
 
 gio('setUserId', 12);
